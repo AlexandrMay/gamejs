@@ -88,8 +88,12 @@ function renderBox(){
 
     $game.insertAdjacentElement('afterbegin', box);
 
-    
-
+    box.addEventListener('click', function(event){
+        if(event.target.dataset){
+            score++;
+            renderBox();
+        }
+    });
 }
 
 function handleBoxClick(event){
@@ -97,10 +101,10 @@ function handleBoxClick(event){
         return;
     }
 
-    if(event.target.dataset){
-        score++;
-        renderBox();
-    }
+  //  if(event.target.dataset){
+       // score++;
+      //  renderBox();
+   // }
 
 }
 
