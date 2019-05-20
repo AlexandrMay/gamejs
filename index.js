@@ -100,12 +100,6 @@ function handleBoxClick(event){
     if(!isGameStarted){
         return;
     }
-
-  //  if(event.target.dataset){
-       // score++;
-      //  renderBox();
-   // }
-
 }
 
 function getRandom(min, max){
